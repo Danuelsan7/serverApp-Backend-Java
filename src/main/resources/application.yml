@@ -1,0 +1,27 @@
+#spring:
+#  datasource:
+#    password: postgres
+#    url: jdbc:postgresql://localhost:5432/appserver
+#    username: postgres
+#    jpa:
+#      hibernate:
+#        ddl-auto: create
+#        properties:
+#          hibernate:
+#            dialect: org.hibernate.dialect.PostgreSQLDialect
+#            format_sql: true
+#            show-sql: true
+
+spring:
+  datasource:
+    password:
+    url: jdbc:mysql://localhost:3306/serverdb
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+        format_sql: true
+    show-sql: true
